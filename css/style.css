@@ -38,8 +38,9 @@ header .container {
 header #links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 14px;
+    gap: 24px;
 }
 
 header #links img {
@@ -49,6 +50,27 @@ header #links img {
 header #links img:hover {
     opacity: 0.5;
     transition: 0.3s;
+}
+
+header #discord {
+    position: relative;
+}
+
+header #discord-popup {
+    position: absolute;
+    display: none;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+
+header #discord:hover #discord-popup {
+    display: inline-block;
 }
 
 header nav a {
@@ -126,6 +148,7 @@ button:hover {
 }
 
 button.secondary {
+    padding: 12px 24px;
     border: 2px solid rgb(0, 237, 0);
     background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 237, 0);

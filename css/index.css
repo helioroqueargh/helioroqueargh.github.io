@@ -33,6 +33,7 @@
 #hero-buttons {
     display: flex;
     flex-direction: row;
+    align-items: end;
     gap: 16px;
 }
 
@@ -41,4 +42,10 @@
         flex-direction: column;
         justify-content: center;
     }
+}
+
+#aboutme {
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
 }
