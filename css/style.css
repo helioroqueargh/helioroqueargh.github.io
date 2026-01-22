@@ -137,6 +137,16 @@ a:hover {
     color: rgb(0, 177, 0);
 }
 
+p:has(img) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+p img {
+    width: 18px;
+}
+
 button {
     font-family: "Source Code Pro", monospace;
     padding: 14px 24px;
