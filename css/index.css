@@ -78,7 +78,14 @@
     margin: auto;
     width: 90%;
     max-width: 1100px;
-    margin-bottom: 300px;
+}
+
+#aboutme-section, #pastwork-section {
+    margin-bottom: 200px;
+}
+
+#contact-section {
+    margin-bottom: 50px;
 }
 
 #pastwork-section #works-grid {
@@ -94,7 +101,7 @@
 }
 
 #pastwork-section .work-title {
-    color: white;
+    color: rgb(0, 183, 0);
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -107,6 +114,29 @@
 
 #pastwork-section .work hr {
     margin-bottom: 20px;
+}
+
+#contact-container {
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(0, 183, 0);
+    padding: 30px;
+}
+
+#contact-container p {
+    margin: 0;
+}
+
+#contact-container h2 {
+    margin-bottom: 30px;
+}
+
+#contact-container button img {
+    filter: invert(1);
 }
 
 @media only screen and (max-width: 900px) {
