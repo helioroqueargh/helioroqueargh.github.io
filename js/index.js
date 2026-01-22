@@ -3,11 +3,17 @@ const contact = document.querySelector("#contact")
 const pastWork = document.querySelector("#pastwork")
 
 function scrollHome() {
-    window.scrollTo(0, 0)
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
 }
 
 function scrollToElem(elem) {
-    window.scrollTo(0, elem.getBoundingClientRect().top + window.scrollY - 100)
+    window.scrollTo({
+        top: elem.getBoundingClientRect().top + window.scrollY - 100,
+        behavior: "smooth"
+    })
 }
 
 function scrollAboutMe() {
