@@ -74,38 +74,38 @@
     }
 }
 
-#aboutme, #pastwork, #contact {
+#aboutme-section, #pastwork-section, #contact-section {
     margin: auto;
     width: 90%;
     max-width: 1100px;
     margin-bottom: 300px;
 }
 
-#pastwork #works-grid {
+#pastwork-section #works-grid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
 }
 
-#pastwork .work-video { 
+#pastwork-section .work-video { 
     width: 100%;
     aspect-ratio: 16/9;
 }
 
-#pastwork .work-title {
+#pastwork-section .work-title {
     color: white;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-#pastwork .work-desc {
+#pastwork-section .work-desc {
     color: rgb(220, 220, 220);
     font-size: 1rem;
     margin-top: 0;
 }
 
-#pastwork .work hr {
+#pastwork-section .work hr {
     margin-bottom: 20px;
 }
 
@@ -122,7 +122,7 @@
         font-size: 0.9rem;
     }
 
-    #pastwork #works-grid {
+    #pastwork-section #works-grid {
         grid-template-columns: 1fr;
     }
 }

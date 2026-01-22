@@ -13,15 +13,15 @@
     <header>
         <div class="container"></div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#aboutme">About Me</a>
-            <a href="#pastwork">Past Work</a>
-            <a href="#contact">Contact</a>
+            <span onclick="scrollHome()">Home</span>
+            <span onclick="scrollAboutMe()">About Me</span>
+            <span onclick="scrollPastWork()">Past Work</span>
+            <span onclick="scrollContact()">Contact</span>
         </nav>
         <div id="links" class="container">
             <a href="https://www.roblox.com/users/4345244260/profile"><img src="assets/svg/roblox.svg"></a>
             <a href="https://github.com/helioroqueargh"><img src="assets/svg/github.svg"></a>
-            <div id="discord">
+            <div id="discord">  
                 <img src="assets/svg/discord.svg">
                 <p id="discord-popup">helioroq</p>
             </div>
@@ -45,8 +45,8 @@
                     </ul>
                 </div>
                 <div id="hero-buttons">
-                    <a href="#pastwork"><button>Past Work</button></a>
-                    <a href="#contact"><button class="secondary">Contact</button></a>
+                    <button onclick="scrollPastWork()">Past Work</button>
+                    <button onclick="scrollContact()" class="secondary">Contact</button>
                 </div>
             </div>
             <div id="hero-right">
@@ -58,8 +58,8 @@
             </div>
         </div>
 
-        <div id="aboutme">
-            <h1># About Me</h1>
+        <div id="aboutme-section">
+            <h1 id="aboutme"># About Me</h1>
             <p>I am 18 years old and currently study <b>Computer Engineering</b> in college. I have been programming in Roblox for around 2-3 years. I currently work with <b>C#/React</b>. Some languages I can program in are:</p>
             <ul>
                 <li>C#</li>
@@ -73,8 +73,8 @@
             <p></p>
         </div>
 
-        <div id="pastwork">
-            <h1># Past Work</h1>
+        <div id="pastwork-section">
+            <h1 id="pastwork"># Past Work</h1>
             <div id="works-grid">
                 <div class="work">
                     <hr>
@@ -103,13 +103,15 @@
             </div>
         </div>
 
-        <div id="contact">
-            <h1># Contact</h1>
+        <div id="contact-section">
+            <h1 id="contact"># Contact</h1>
         </div>
     </main>
 
     <footer>
         <p>Made by helioroqueargh</p>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

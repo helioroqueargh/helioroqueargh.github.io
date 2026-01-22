@@ -31,6 +31,12 @@ header nav {
     flex: 2;
 }
 
+header nav span {
+    font-size: 1.2rem;
+    color: rgb(0, 237, 0);
+    cursor: pointer;
+}
+
 header .container {
     flex: 1;
 }
@@ -78,11 +84,6 @@ header #discord:hover #discord-popup {
     display: inline-block;
 }
 
-header nav a {
-    font-size: 1.3rem;
-    text-decoration: none;
-}
-
 #background {
     position: fixed;
     left: 0;
@@ -118,7 +119,7 @@ footer {
         flex: 0;
     }
 
-    header nav a {
+    header nav span {
         font-size: 1rem;
     }
 }
