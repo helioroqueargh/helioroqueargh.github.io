@@ -85,8 +85,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    column-gap: 40px;
-    row-gap: 50px;
+    gap: 40px;
 }
 
 #pastwork .work-video { 
@@ -104,4 +103,26 @@
     color: rgb(220, 220, 220);
     font-size: 1rem;
     margin-top: 0;
+}
+
+#pastwork .work hr {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    #hero-avatar {
+        width: 200px;
+    }
+
+    #hero-left {
+        align-items: center;
+    }
+    
+    #hero p, #hero li {
+        font-size: 0.9rem;
+    }
+
+    #pastwork #works-grid {
+        grid-template-columns: 1fr;
+    }
 }
