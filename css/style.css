@@ -69,6 +69,11 @@ header #discord-popup {
     transform: translateX(-50%);
 }
 
+header #discord:hover img {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
 header #discord:hover #discord-popup {
     display: inline-block;
 }
@@ -90,7 +95,7 @@ header nav a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.02;
+    opacity: 0.05;
 }
 
 @media only screen and (max-width: 900px) {
@@ -114,7 +119,7 @@ header nav a {
 }
 
 /* */
-p,a {
+p,a,li {
     font-size: 1.1rem;
 }
 
@@ -126,9 +131,10 @@ a,.green,h1,h2,h3,h4,h5,h6 {
     color: rgb(0, 237, 0);
 }
 
+a{ transition: 0.3s; }
+
 a:hover {
     color: rgb(0, 177, 0);
-    transition: 0.3s;
 }
 
 button {
