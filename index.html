@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helioroqueargh</title>
+    <link rel="shortcut icon" href="assets/svg/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="background"></div>
+    <header>
+        <div class="container"></div>
+        <nav>
+            <span onclick="scrollHome()">Home</span>
+            <span onclick="scrollAboutMe()">About Me</span>
+            <span onclick="scrollGames()">Games</span>
+            <span onclick="scrollPastWork()">Past Work</span>
+            <span onclick="scrollContact()">Contact</span>
+        </nav>
+        <div id="links" class="container">
+            <a href="https://www.roblox.com/users/4345244260/profile"><img src="assets/svg/roblox.svg"></a>
+            <a href="https://github.com/helioroqueargh/helioroqueargh.github.io"><img src="assets/svg/github.svg"></a>
+            <div id="discord">
+                <img src="assets/svg/discord.svg">
+                <p id="discord-popup">@helioroq</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="home"></div>
+        <div id="hero">
+            <div id="hero-left">
+                <h1 id="hero-title"><a href="https://www.roblox.com/users/4345244260/profile">helioroqueargh</a></h1>
+                <div>
+                    <p>Hello, I am a 2nd year Computer Engineering student and a Roblox developer. Some of my skills
+                        are:</p>
+                    <ul>
+                        <li>Inventory systems</li>
+                        <li>Gun systems</li>
+                        <li>UI Scripting</li>
+                        <li>Vehicles</li>
+                        <li>Datastores</li>
+                        <li>Servers, APIs...</li>
+                    </ul>
+                </div>
+                <div id="hero-buttons">
+                    <button onclick="scrollPastWork()">Past Work</button>
+                    <button onclick="scrollContact()" class="secondary">Contact</button>
+                </div>
+            </div>
+            <div id="hero-right">
+                <!--img id="hero-avatar" src="assets/img/avatar.png" alt=""-->
+                <div id="socials">
+                    <p><img src="assets/svg/discord.svg"> Discord: helioroq</p>
+                    <p><img src="assets/svg/roblox.svg"> Roblox: helioroqueargh</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="aboutme-section">
+            <h1 id="aboutme"># About Me</h1>
+            <p>I am 18 years old and currently study <b>Computer Engineering</b> in college. I have been programming in
+                Roblox for around 2-3 years. I currently work with <b>C#/React</b>. Some languages I can program in are:
+            </p>
+            <ul>
+                <li><img src="assets/svg/csharp.svg">C#</li>
+                <li><img src="assets/svg/lua.svg">Lua</li>
+                <li><img src="assets/svg/javascript.svg">JavaScript</li>
+                <li><img src="assets/svg/python.svg">Python</li>
+                <li><img src="assets/svg/go.svg">Go</li>
+                <li><img src="assets/svg/cpp.svg">C/C++</li>
+            </ul>
+            <p>I have interest in gym, heavy metal and rock music, guitars, cars, formula 1, etc...</p>
+            <p></p>
+        </div>
+
+        <div id="games-section">
+            <h1 id="games"># Games</h1>
+            <div id="games-list">
+                <div class="game-hero">
+                    <div class="game-hero-text">
+                        <h2 class="game-title">Escape Baddies For Brainrots!</h2>
+                        <span class="visits"><span class="visits-dot"></span> 500k+ Visits</span>
+                        <p class="game-desc">A game where you escape baddies for brainrots. I scripted the game and
+                            worked on it with my friends.</p>
+                        <a href="https://www.roblox.com/games/82549496282409/Escape-Baddies-For-Brainrots"
+                            target="_blank" class="game-link">
+                            <button class="play-btn"><img src="assets/svg/roblox.svg" alt="Roblox"> Play</button>
+                        </a>
+                    </div>
+                    <div class="game-gallery">
+                        <div class="game-hero-img">
+                            <button class="carousel-btn prev-btn" onclick="prevImage('game1-gallery')">&#10094;</button>
+                            <img id="game1-main-img" src="assets/img/escape-baddies-for-brainrots1.webp"
+                                alt="Game thumbnail">
+                            <button class="carousel-btn next-btn" onclick="nextImage('game1-gallery')">&#10095;</button>
+                        </div>
+                        <div id="game1-gallery" class="thumbnail-row" style="display: none;">
+                            <img class="thumb active" src="assets/img/escape-baddies-for-brainrots1.webp"
+                                onclick="changeImage('game1-main-img', this)" alt="Thumbnail 1">
+                            <img class="thumb" src="assets/img/escape-baddies-for-brainrots2.webp"
+                                onclick="changeImage('game1-main-img', this)" alt="Thumbnail 2">
+                            <img class="thumb" src="assets/img/escape-baddies-for-brainrots3.webp"
+                                onclick="changeImage('game1-main-img', this)" alt="Thumbnail 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-hero">
+                    <div class="game-hero-text">
+                        <h2 class="game-title">Slap Battle For Brainrots!</h2>
+                        <span class="visits"><span class="visits-dot"></span> 500k+ Visits</span>
+                        <p class="game-desc">Based on the previous game. Slap your enemies out of the arena to steal
+                            Brainrots.</p>
+                        <a href="https://www.roblox.com/games/80423466621023/Slap-Battle-for-Brainrots" target="_blank"
+                            class="game-link">
+                            <button class="play-btn"><img src="assets/svg/roblox.svg" alt="Roblox"> Play</button>
+                        </a>
+                    </div>
+                    <div class="game-gallery">
+                        <div class="game-hero-img">
+                            <button class="carousel-btn prev-btn" onclick="prevImage('game2-gallery')">&#10094;</button>
+                            <img id="game2-main-img" src="assets/img/slap-thumb-1.webp" alt="Game thumbnail">
+                            <button class="carousel-btn next-btn" onclick="nextImage('game2-gallery')">&#10095;</button>
+                        </div>
+                        <div id="game2-gallery" class="thumbnail-row" style="display: none;">
+                            <img class="thumb active" src="assets/img/slap-thumb-1.webp"
+                                onclick="changeImage('game1-main-img', this)" alt="Thumbnail 1">
+                            <img class="thumb" src="assets/img/slap-thumb-2.webp"
+                                onclick="changeImage('game1-main-img', this)" alt="Thumbnail 2">
+                            <img class="thumb" src="assets/img/slap-thumb-3.webp"
+                                onclick="changeImage('game1-main-img', this)" alt="Thumbnail 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pastwork-section">
+            <h1 id="pastwork"># Past Work</h1>
+            <div id="works-grid">
+                <div class="work">
+                    <hr>
+                    <iframe class="work-video" src="https://www.youtube.com/embed/5VbYp1F8SxU?si=dfMQQU9dY53jEGNL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3 class="work-title"># Dead Silent</h3>
+                    <p class="work-desc">This is an horror survival game I worked on a while ago. I was pretty satisfied
+                        with the game at the time but I ended up getting demotivated when it was time to build the
+                        actual map. I might get back to it at some point.</p>
+                </div>
+                <div class="work">
+                    <hr>
+                    <iframe class="work-video" src="https://www.youtube.com/embed/dRt-AUyEU_E?si=a4dp2eUeKp0s_iTF"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3 class="work-title"># Car System</h3>
+                    <p class="work-desc">Car physics, suspension, goofy horn. The only thing it's missing is drunk
+                        driving.</p>
+                </div>
+                <div class="work">
+                    <hr>
+                    <iframe class="work-video" src="https://www.youtube.com/embed/GQCIMgqQJVE?si=NvEPX-K0Ls6N3aOD"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3 class="work-title"># OTS Gun System</h3>
+                    <p class="work-desc">Modular over the shoulder gun system, this was actually the third version of
+                        it. It has client side hit register with a bunch of server side sanity checks with raycasts to
+                        make sure the hit was legit. I made that a few years ago.</p>
+                </div>
+                <div class="work">
+                    <hr>
+                    <iframe class="work-video" src="https://www.youtube.com/embed/l7C5W_vy26U?si=l6Tzf5nnKfCXHAmm"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3 class="work-title"># Roleplay Prototype</h3>
+                    <p class="work-desc">Some roleplay features that were clearly inspired by New Haven County.
+                        Everything is modular, uses a custom component system.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-section">
+            <h1 id="contact"># Contact</h1>
+            <div id="contact-container">
+                <p>Message me on discord:</p>
+                <h2>@helioroq</h2>
+                <a href="https://www.roblox.com/users/4345244260/profile"><button><img src="assets/svg/roblox.svg">
+                        Roblox</button></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by helioroqueargh. All rights reserved.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
